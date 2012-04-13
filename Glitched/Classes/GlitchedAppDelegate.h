@@ -1,5 +1,5 @@
 /*-
- *  Glitch iOS SDK
+ *  Glitch iOS SDK Sample App
  *  
  *  Copyright 2011 Tiny Speck, Inc.
  *  Created by Brady Archambo.
@@ -21,9 +21,22 @@
  */
 
 
+#import <UIKit/UIKit.h>
+#import "TestFlight.h"
+#import "Glitch.h"
 
-// User-defined Configuration
-// Please define these!
+@class SampleViewController;
+@class GLSkill;
 
-#define GCRedirectURI @"glitchiossdk://auth" // Example: "glitchiossdk://auth"
-#define GCAPIKey @"125-3a47e47cef0ad897f914956082a12a1f9d7b0ed7" // Example: @"84-9c7dec5325d7f12807928cde70c41d2c0aab3878"
+@interface GlitchedAppDelegate : NSObject <UIApplicationDelegate>
+{
+}
+
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet SampleViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+
+- (void)cancelAllLocalNotifications;
+- (void)scheduleLearningNotification:(GLSkill *)skill;
+
+@end

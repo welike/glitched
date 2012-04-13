@@ -1,5 +1,6 @@
+
 /*-
- *  Glitch iOS SDK
+ *  Glitch iOS SDK Sample App
  *  
  *  Copyright 2011 Tiny Speck, Inc.
  *  Created by Brady Archambo.
@@ -7,6 +8,7 @@
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
+ 
  *
  *  http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -20,10 +22,12 @@
  *  http://www.tinyspeck.com
  */
 
+#import <UIKit/UIKit.h>
 
-
-// User-defined Configuration
-// Please define these!
-
-#define GCRedirectURI @"glitchiossdk://auth" // Example: "glitchiossdk://auth"
-#define GCAPIKey @"125-3a47e47cef0ad897f914956082a12a1f9d7b0ed7" // Example: @"84-9c7dec5325d7f12807928cde70c41d2c0aab3878"
+int main(int argc, char *argv[])
+{
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    int retVal = UIApplicationMain(argc, argv, nil, nil);
+    [pool release];
+    return retVal;
+}

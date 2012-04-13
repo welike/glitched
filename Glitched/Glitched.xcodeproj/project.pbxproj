@@ -1,0 +1,880 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1723BE143CC49200C0C0DF /* GLSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1723BD143CC49200C0C0DF /* GLSkill.m */; };
+		0A1723C5143CC50E00C0C0DF /* SkillsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1723C4143CC50E00C0C0DF /* SkillsController.m */; };
+		0A1723C8143CCCC700C0C0DF /* SkillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1723C7143CCCC700C0C0DF /* SkillCell.m */; };
+		0A1723CA143CDCFF00C0C0DF /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1723C9143CDCFE00C0C0DF /* InfoView.xib */; };
+		0A1723CC143CDF5B00C0C0DF /* info_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1723CB143CDF5B00C0C0DF /* info_background.png */; };
+		0A1723CF143CE57E00C0C0DF /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1723CE143CE57E00C0C0DF /* InfoViewController.m */; };
+		0A1723D2143CF76300C0C0DF /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1723D1143CF76200C0C0DF /* InventoryViewController.m */; };
+		0A1723D5143CF91500C0C0DF /* GLItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1723D4143CF91500C0C0DF /* GLItem.m */; };
+		0A1723D8143CFAEA00C0C0DF /* GLItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1723D7143CFAEA00C0C0DF /* GLItemCell.m */; };
+		0A1723DC143D867E00C0C0DF /* DDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1723DB143D867E00C0C0DF /* DDProgressView.m */; };
+		0A6FDA161442EF4F0097868F /* skill_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6FDA151442EF4F0097868F /* skill_background.png */; };
+		0A7E4F4514437CAD00C3E3E5 /* AchievementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F4414437CAD00C3E3E5 /* AchievementView.xib */; };
+		0A7E4F4914437DA300C3E3E5 /* AchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E4F4814437DA300C3E3E5 /* AchievementViewController.m */; };
+		0A7E4F50144383CE00C3E3E5 /* icon_achievements.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F4A144383CE00C3E3E5 /* icon_achievements.png */; };
+		0A7E4F52144383CE00C3E3E5 /* icon_inventory.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F4C144383CE00C3E3E5 /* icon_inventory.png */; };
+		0A7E4F53144383CE00C3E3E5 /* icon_skills.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F4D144383CE00C3E3E5 /* icon_skills.png */; };
+		0A7E4F54144383CE00C3E3E5 /* icon_status.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F4E144383CE00C3E3E5 /* icon_status.png */; };
+		0A7E4F55144383CE00C3E3E5 /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F4F144383CE00C3E3E5 /* icon-512.png */; };
+		0A7E4F57144385B600C3E3E5 /* achievement_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F56144385B600C3E3E5 /* achievement_background.png */; };
+		0A7E4F591443889B00C3E3E5 /* achievement_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F581443889B00C3E3E5 /* achievement_background@2x.png */; };
+		0A7E4F7A14438E2B00C3E3E5 /* CustomUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E4F7714438E2B00C3E3E5 /* CustomUITabBarController.m */; };
+		0A7E4F7B14438E2B00C3E3E5 /* CustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E4F7914438E2B00C3E3E5 /* CustomTabBarItem.m */; };
+		0A7E4F7E14438E9E00C3E3E5 /* tabbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F7C14438E9E00C3E3E5 /* tabbar-bg.png */; };
+		0A7E4F7F14438E9E00C3E3E5 /* tabbar-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E4F7D14438E9E00C3E3E5 /* tabbar-bg@2x.png */; };
+		0AA349111456953200728FA0 /* UIImageView+NotRootBeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA349101456953200728FA0 /* UIImageView+NotRootBeer.m */; };
+		0AB7E68A144585CE00019D94 /* icon_achievements@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7E689144585CE00019D94 /* icon_achievements@2x.png */; };
+		0AB7E69014458ACB00019D94 /* icon_auctions.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7E68C14458ACB00019D94 /* icon_auctions.png */; };
+		0AB7E69114458ACB00019D94 /* icon_auctions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7E68D14458ACB00019D94 /* icon_auctions@2x.png */; };
+		0AB7E69214458ACB00019D94 /* icon_inventory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7E68E14458ACB00019D94 /* icon_inventory@2x.png */; };
+		0AB7E69314458ACB00019D94 /* icon_skills@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB7E68F14458ACB00019D94 /* icon_skills@2x.png */; };
+		0ABB8696143F606D0037B8C4 /* SkillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABB8695143F606D0037B8C4 /* SkillCell.xib */; };
+		0AE586E91441517300BCEDB0 /* SkillView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE586E81441517300BCEDB0 /* SkillView.xib */; };
+		0AE586ED1441539100BCEDB0 /* SkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE586EC1441539100BCEDB0 /* SkillViewController.m */; };
+		0AEBA207143BF611002B60CD /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA1F7143BF611002B60CD /* EGOCache.m */; };
+		0AEBA208143BF611002B60CD /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA1FA143BF611002B60CD /* EGOImageButton.m */; };
+		0AEBA209143BF611002B60CD /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA1FD143BF611002B60CD /* EGOImageLoadConnection.m */; };
+		0AEBA20A143BF611002B60CD /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA1FF143BF611002B60CD /* EGOImageLoader.m */; };
+		0AEBA20B143BF611002B60CD /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA202143BF611002B60CD /* EGOImageView.m */; };
+		0AEBA20C143BF611002B60CD /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEBA205143BF611002B60CD /* libTestFlight.a */; };
+		0AEBA20F143C2DAE002B60CD /* GlitchedClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA20E143C2DAE002B60CD /* GlitchedClient.m */; };
+		0AEBA216143C54F9002B60CD /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEBA210143C54F9002B60CD /* icon-72.png */; };
+		0AEBA217143C54F9002B60CD /* icon-small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEBA211143C54F9002B60CD /* icon-small-50.png */; };
+		0AEBA218143C54F9002B60CD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEBA212143C54F9002B60CD /* icon-small.png */; };
+		0AEBA219143C54F9002B60CD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEBA213143C54F9002B60CD /* icon-small@2x.png */; };
+		0AEBA21A143C54F9002B60CD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEBA214143C54F9002B60CD /* icon.png */; };
+		0AEBA21B143C54F9002B60CD /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEBA215143C54F9002B60CD /* icon@2x.png */; };
+		0AEBA22D143C5671002B60CD /* GradientBackgroundTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA21E143C5671002B60CD /* GradientBackgroundTable.m */; };
+		0AEBA22E143C5671002B60CD /* LabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA220143C5671002B60CD /* LabelCell.m */; };
+		0AEBA230143C5671002B60CD /* PageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA224143C5671002B60CD /* PageCell.m */; };
+		0AEBA231143C5671002B60CD /* PageCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA226143C5671002B60CD /* PageCellBackground.m */; };
+		0AEBA232143C5671002B60CD /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA228143C5671002B60CD /* PageViewController.m */; };
+		0AEBA233143C5671002B60CD /* RoundRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA22A143C5671002B60CD /* RoundRect.m */; };
+		0AEBA234143C5671002B60CD /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA22C143C5671002B60CD /* TextFieldCell.m */; };
+		0AEBA237143C6618002B60CD /* GLAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA236143C6618002B60CD /* GLAchievement.m */; };
+		0AEBA23A143C68D3002B60CD /* GLAchievementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA239143C68D2002B60CD /* GLAchievementCell.m */; };
+		0AEBA248143C6A52002B60CD /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA23D143C6A52002B60CD /* SDImageCache.m */; };
+		0AEBA249143C6A52002B60CD /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA241143C6A52002B60CD /* SDWebImageDownloader.m */; };
+		0AEBA24A143C6A52002B60CD /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA244143C6A52002B60CD /* SDWebImageManager.m */; };
+		0AEBA24B143C6A52002B60CD /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBA247143C6A52002B60CD /* UIImageView+WebCache.m */; };
+		0AEBA24D143C6D8E002B60CD /* default_achievement_60.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AEBA24C143C6D8E002B60CD /* default_achievement_60.png */; };
+		0AFC1C3C143B258A007727E5 /* AchievementsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC1C3B143B258A007727E5 /* AchievementsController.m */; };
+		23201C1C14105138003E71A7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23201C1A14105138003E71A7 /* MainWindow.xib */; };
+		23201C1D14105138003E71A7 /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23201C1B14105138003E71A7 /* SampleViewController.xib */; };
+		237A883A140D60A8004D6BA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237A8839140D60A8004D6BA6 /* UIKit.framework */; };
+		237A883C140D60A8004D6BA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237A883B140D60A8004D6BA6 /* Foundation.framework */; };
+		237A883E140D60A8004D6BA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237A883D140D60A8004D6BA6 /* CoreGraphics.framework */; };
+		23AF3948141038520045A2B4 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23AF3947141038520045A2B4 /* OpenSans-Bold.ttf */; };
+		23AF394B141038590045A2B4 /* groddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AF3949141038590045A2B4 /* groddle.png */; };
+		23AF394C141038590045A2B4 /* groddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23AF394A141038590045A2B4 /* groddle@2x.png */; };
+		23AF395A141038CA0045A2B4 /* GlitchedAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF3957141038CA0045A2B4 /* GlitchedAppDelegate.m */; };
+		23AF395B141038CA0045A2B4 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF3959141038CA0045A2B4 /* SampleViewController.m */; };
+		23AF399C14103AA70045A2B4 /* GCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF399914103AA70045A2B4 /* GCRequest.m */; };
+		23AF399D14103AA70045A2B4 /* Glitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF399B14103AA70045A2B4 /* Glitch.m */; };
+		23AF3A02141048EE0045A2B4 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39EA141048EE0045A2B4 /* NSObject+SBJson.m */; };
+		23AF3A03141048EE0045A2B4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39ED141048EE0045A2B4 /* SBJsonParser.m */; };
+		23AF3A04141048EE0045A2B4 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39EF141048EE0045A2B4 /* SBJsonStreamParser.m */; };
+		23AF3A05141048EE0045A2B4 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39F1141048EE0045A2B4 /* SBJsonStreamParserAccumulator.m */; };
+		23AF3A06141048EE0045A2B4 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39F3141048EE0045A2B4 /* SBJsonStreamParserAdapter.m */; };
+		23AF3A07141048EE0045A2B4 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39F5141048EE0045A2B4 /* SBJsonStreamParserState.m */; };
+		23AF3A08141048EE0045A2B4 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39F7141048EE0045A2B4 /* SBJsonStreamWriter.m */; };
+		23AF3A09141048EE0045A2B4 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39F9141048EE0045A2B4 /* SBJsonStreamWriterAccumulator.m */; };
+		23AF3A0A141048EE0045A2B4 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39FB141048EE0045A2B4 /* SBJsonStreamWriterState.m */; };
+		23AF3A0B141048EE0045A2B4 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39FD141048EE0045A2B4 /* SBJsonTokeniser.m */; };
+		23AF3A0C141048EE0045A2B4 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF39FF141048EE0045A2B4 /* SBJsonUTF8Stream.m */; };
+		23AF3A0D141048EE0045A2B4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF3A01141048EE0045A2B4 /* SBJsonWriter.m */; };
+		23AF3A1C14104E350045A2B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AF3A1B14104E350045A2B4 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A1723BC143CC49200C0C0DF /* GLSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLSkill.h; path = Classes/GLSkill.h; sourceTree = SOURCE_ROOT; };
+		0A1723BD143CC49200C0C0DF /* GLSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLSkill.m; path = Classes/GLSkill.m; sourceTree = SOURCE_ROOT; };
+		0A1723C3143CC50E00C0C0DF /* SkillsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkillsController.h; path = Classes/SkillsController.h; sourceTree = SOURCE_ROOT; };
+		0A1723C4143CC50E00C0C0DF /* SkillsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkillsController.m; path = Classes/SkillsController.m; sourceTree = SOURCE_ROOT; };
+		0A1723C6143CCCC700C0C0DF /* SkillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkillCell.h; path = Classes/SkillCell.h; sourceTree = SOURCE_ROOT; };
+		0A1723C7143CCCC700C0C0DF /* SkillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkillCell.m; path = Classes/SkillCell.m; sourceTree = SOURCE_ROOT; };
+		0A1723C9143CDCFE00C0C0DF /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = SOURCE_ROOT; };
+		0A1723CB143CDF5B00C0C0DF /* info_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_background.png; path = Resources/Images/info_background.png; sourceTree = SOURCE_ROOT; };
+		0A1723CD143CE57D00C0C0DF /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = Classes/InfoViewController.h; sourceTree = SOURCE_ROOT; };
+		0A1723CE143CE57E00C0C0DF /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = Classes/InfoViewController.m; sourceTree = SOURCE_ROOT; };
+		0A1723D0143CF76100C0C0DF /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InventoryViewController.h; path = Classes/InventoryViewController.h; sourceTree = SOURCE_ROOT; };
+		0A1723D1143CF76200C0C0DF /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InventoryViewController.m; path = Classes/InventoryViewController.m; sourceTree = SOURCE_ROOT; };
+		0A1723D3143CF91400C0C0DF /* GLItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLItem.h; path = Classes/GLItem.h; sourceTree = SOURCE_ROOT; };
+		0A1723D4143CF91500C0C0DF /* GLItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLItem.m; path = Classes/GLItem.m; sourceTree = SOURCE_ROOT; };
+		0A1723D6143CFAEA00C0C0DF /* GLItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLItemCell.h; path = Classes/GLItemCell.h; sourceTree = SOURCE_ROOT; };
+		0A1723D7143CFAEA00C0C0DF /* GLItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLItemCell.m; path = Classes/GLItemCell.m; sourceTree = SOURCE_ROOT; };
+		0A1723DA143D867E00C0C0DF /* DDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDProgressView.h; sourceTree = "<group>"; };
+		0A1723DB143D867E00C0C0DF /* DDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDProgressView.m; sourceTree = "<group>"; };
+		0A6FDA151442EF4F0097868F /* skill_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skill_background.png; path = Resources/Images/skill_background.png; sourceTree = SOURCE_ROOT; };
+		0A7E4F4414437CAD00C3E3E5 /* AchievementView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AchievementView.xib; sourceTree = SOURCE_ROOT; };
+		0A7E4F4714437DA300C3E3E5 /* AchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AchievementViewController.h; path = Classes/AchievementViewController.h; sourceTree = SOURCE_ROOT; };
+		0A7E4F4814437DA300C3E3E5 /* AchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AchievementViewController.m; path = Classes/AchievementViewController.m; sourceTree = SOURCE_ROOT; };
+		0A7E4F4A144383CE00C3E3E5 /* icon_achievements.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_achievements.png; path = Resources/Images/icon_achievements.png; sourceTree = SOURCE_ROOT; };
+		0A7E4F4C144383CE00C3E3E5 /* icon_inventory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_inventory.png; path = Resources/Images/icon_inventory.png; sourceTree = SOURCE_ROOT; };
+		0A7E4F4D144383CE00C3E3E5 /* icon_skills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_skills.png; path = Resources/Images/icon_skills.png; sourceTree = SOURCE_ROOT; };
+		0A7E4F4E144383CE00C3E3E5 /* icon_status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_status.png; path = Resources/Images/icon_status.png; sourceTree = SOURCE_ROOT; };
+		0A7E4F4F144383CE00C3E3E5 /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-512.png"; path = "Resources/Images/icon-512.png"; sourceTree = SOURCE_ROOT; };
+		0A7E4F56144385B600C3E3E5 /* achievement_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = achievement_background.png; path = Resources/Images/achievement_background.png; sourceTree = SOURCE_ROOT; };
+		0A7E4F581443889B00C3E3E5 /* achievement_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "achievement_background@2x.png"; path = "Resources/Images/achievement_background@2x.png"; sourceTree = SOURCE_ROOT; };
+		0A7E4F7614438E2B00C3E3E5 /* CustomUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITabBarController.h; sourceTree = SOURCE_ROOT; };
+		0A7E4F7714438E2B00C3E3E5 /* CustomUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITabBarController.m; sourceTree = SOURCE_ROOT; };
+		0A7E4F7814438E2B00C3E3E5 /* CustomTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarItem.h; sourceTree = SOURCE_ROOT; };
+		0A7E4F7914438E2B00C3E3E5 /* CustomTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarItem.m; sourceTree = SOURCE_ROOT; };
+		0A7E4F7C14438E9E00C3E3E5 /* tabbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-bg.png"; path = "Resources/Images/tabbar-bg.png"; sourceTree = SOURCE_ROOT; };
+		0A7E4F7D14438E9E00C3E3E5 /* tabbar-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-bg@2x.png"; path = "Resources/Images/tabbar-bg@2x.png"; sourceTree = SOURCE_ROOT; };
+		0AA3490F1456953200728FA0 /* UIImageView+NotRootBeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+NotRootBeer.h"; path = "../../../not-root-beer/UIImageView+NotRootBeer.h"; sourceTree = "<group>"; };
+		0AA349101456953200728FA0 /* UIImageView+NotRootBeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+NotRootBeer.m"; path = "../../../not-root-beer/UIImageView+NotRootBeer.m"; sourceTree = "<group>"; };
+		0AB7E689144585CE00019D94 /* icon_achievements@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_achievements@2x.png"; path = "Resources/Images/icon_achievements@2x.png"; sourceTree = SOURCE_ROOT; };
+		0AB7E68C14458ACB00019D94 /* icon_auctions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_auctions.png; path = Resources/Images/icon_auctions.png; sourceTree = SOURCE_ROOT; };
+		0AB7E68D14458ACB00019D94 /* icon_auctions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_auctions@2x.png"; path = "Resources/Images/icon_auctions@2x.png"; sourceTree = SOURCE_ROOT; };
+		0AB7E68E14458ACB00019D94 /* icon_inventory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_inventory@2x.png"; path = "Resources/Images/icon_inventory@2x.png"; sourceTree = SOURCE_ROOT; };
+		0AB7E68F14458ACB00019D94 /* icon_skills@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_skills@2x.png"; path = "Resources/Images/icon_skills@2x.png"; sourceTree = SOURCE_ROOT; };
+		0ABB8695143F606D0037B8C4 /* SkillCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillCell.xib; sourceTree = SOURCE_ROOT; };
+		0AE586E81441517300BCEDB0 /* SkillView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillView.xib; sourceTree = SOURCE_ROOT; };
+		0AE586EB1441539100BCEDB0 /* SkillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkillViewController.h; path = Classes/SkillViewController.h; sourceTree = SOURCE_ROOT; };
+		0AE586EC1441539100BCEDB0 /* SkillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkillViewController.m; path = Classes/SkillViewController.m; sourceTree = SOURCE_ROOT; };
+		0AEBA1F6143BF611002B60CD /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		0AEBA1F7143BF611002B60CD /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		0AEBA1F9143BF611002B60CD /* EGOImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageButton.h; sourceTree = "<group>"; };
+		0AEBA1FA143BF611002B60CD /* EGOImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageButton.m; sourceTree = "<group>"; };
+		0AEBA1FC143BF611002B60CD /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadConnection.h; sourceTree = "<group>"; };
+		0AEBA1FD143BF611002B60CD /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadConnection.m; sourceTree = "<group>"; };
+		0AEBA1FE143BF611002B60CD /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoader.h; sourceTree = "<group>"; };
+		0AEBA1FF143BF611002B60CD /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
+		0AEBA201143BF611002B60CD /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
+		0AEBA202143BF611002B60CD /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
+		0AEBA205143BF611002B60CD /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		0AEBA206143BF611002B60CD /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		0AEBA20D143C2DAE002B60CD /* GlitchedClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlitchedClient.h; path = Classes/GlitchedClient.h; sourceTree = SOURCE_ROOT; };
+		0AEBA20E143C2DAE002B60CD /* GlitchedClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlitchedClient.m; path = Classes/GlitchedClient.m; sourceTree = SOURCE_ROOT; };
+		0AEBA210143C54F9002B60CD /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "Resources/Images/icon-72.png"; sourceTree = SOURCE_ROOT; };
+		0AEBA211143C54F9002B60CD /* icon-small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-small-50.png"; path = "Resources/Images/icon-small-50.png"; sourceTree = SOURCE_ROOT; };
+		0AEBA212143C54F9002B60CD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-small.png"; path = "Resources/Images/icon-small.png"; sourceTree = SOURCE_ROOT; };
+		0AEBA213143C54F9002B60CD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-small@2x.png"; path = "Resources/Images/icon-small@2x.png"; sourceTree = SOURCE_ROOT; };
+		0AEBA214143C54F9002B60CD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/Images/icon.png; sourceTree = SOURCE_ROOT; };
+		0AEBA215143C54F9002B60CD /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/Images/icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		0AEBA21D143C5671002B60CD /* GradientBackgroundTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientBackgroundTable.h; sourceTree = "<group>"; };
+		0AEBA21E143C5671002B60CD /* GradientBackgroundTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientBackgroundTable.m; sourceTree = "<group>"; };
+		0AEBA21F143C5671002B60CD /* LabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelCell.h; sourceTree = "<group>"; };
+		0AEBA220143C5671002B60CD /* LabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelCell.m; sourceTree = "<group>"; };
+		0AEBA223143C5671002B60CD /* PageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCell.h; sourceTree = "<group>"; };
+		0AEBA224143C5671002B60CD /* PageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCell.m; sourceTree = "<group>"; };
+		0AEBA225143C5671002B60CD /* PageCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCellBackground.h; sourceTree = "<group>"; };
+		0AEBA226143C5671002B60CD /* PageCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCellBackground.m; sourceTree = "<group>"; };
+		0AEBA227143C5671002B60CD /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		0AEBA228143C5671002B60CD /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		0AEBA229143C5671002B60CD /* RoundRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundRect.h; sourceTree = "<group>"; };
+		0AEBA22A143C5671002B60CD /* RoundRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundRect.m; sourceTree = "<group>"; };
+		0AEBA22B143C5671002B60CD /* TextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
+		0AEBA22C143C5671002B60CD /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
+		0AEBA235143C6618002B60CD /* GLAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLAchievement.h; path = Classes/GLAchievement.h; sourceTree = SOURCE_ROOT; };
+		0AEBA236143C6618002B60CD /* GLAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLAchievement.m; path = Classes/GLAchievement.m; sourceTree = SOURCE_ROOT; };
+		0AEBA238143C68D2002B60CD /* GLAchievementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLAchievementCell.h; path = Classes/GLAchievementCell.h; sourceTree = SOURCE_ROOT; };
+		0AEBA239143C68D2002B60CD /* GLAchievementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLAchievementCell.m; path = Classes/GLAchievementCell.m; sourceTree = SOURCE_ROOT; };
+		0AEBA23C143C6A52002B60CD /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		0AEBA23D143C6A52002B60CD /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		0AEBA23E143C6A52002B60CD /* SDImageCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheDelegate.h; sourceTree = "<group>"; };
+		0AEBA23F143C6A52002B60CD /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		0AEBA240143C6A52002B60CD /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		0AEBA241143C6A52002B60CD /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		0AEBA242143C6A52002B60CD /* SDWebImageDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderDelegate.h; sourceTree = "<group>"; };
+		0AEBA243143C6A52002B60CD /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		0AEBA244143C6A52002B60CD /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		0AEBA245143C6A52002B60CD /* SDWebImageManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManagerDelegate.h; sourceTree = "<group>"; };
+		0AEBA246143C6A52002B60CD /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		0AEBA247143C6A52002B60CD /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		0AEBA24C143C6D8E002B60CD /* default_achievement_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default_achievement_60.png; path = Resources/Images/default_achievement_60.png; sourceTree = SOURCE_ROOT; };
+		0AFC1C3A143B258A007727E5 /* AchievementsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AchievementsController.h; path = Classes/AchievementsController.h; sourceTree = SOURCE_ROOT; };
+		0AFC1C3B143B258A007727E5 /* AchievementsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AchievementsController.m; path = Classes/AchievementsController.m; sourceTree = SOURCE_ROOT; };
+		23201C1A14105138003E71A7 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = SOURCE_ROOT; };
+		23201C1B14105138003E71A7 /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = SOURCE_ROOT; };
+		237A8835140D60A8004D6BA6 /* Glitched.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glitched.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		237A8839140D60A8004D6BA6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		237A883B140D60A8004D6BA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		237A883D140D60A8004D6BA6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		237A8841140D60A8004D6BA6 /* Glitched-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Glitched-Info.plist"; sourceTree = "<group>"; };
+		237A8847140D60A8004D6BA6 /* Glitched-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Glitched-Prefix.pch"; sourceTree = "<group>"; };
+		2399647A14114CE500827492 /* GlitchConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlitchConfig.h; path = ../sdk/GlitchConfig.h; sourceTree = SOURCE_ROOT; };
+		23AF3947141038520045A2B4 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Resources/Fonts/OpenSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		23AF3949141038590045A2B4 /* groddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = groddle.png; path = Resources/Images/groddle.png; sourceTree = SOURCE_ROOT; };
+		23AF394A141038590045A2B4 /* groddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "groddle@2x.png"; path = "Resources/Images/groddle@2x.png"; sourceTree = SOURCE_ROOT; };
+		23AF3956141038CA0045A2B4 /* GlitchedAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlitchedAppDelegate.h; path = Classes/GlitchedAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		23AF3957141038CA0045A2B4 /* GlitchedAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlitchedAppDelegate.m; path = Classes/GlitchedAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		23AF3958141038CA0045A2B4 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleViewController.h; path = Classes/SampleViewController.h; sourceTree = SOURCE_ROOT; };
+		23AF3959141038CA0045A2B4 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleViewController.m; path = Classes/SampleViewController.m; sourceTree = SOURCE_ROOT; };
+		23AF399814103AA70045A2B4 /* GCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCRequest.h; path = ../sdk/GCRequest.h; sourceTree = SOURCE_ROOT; };
+		23AF399914103AA70045A2B4 /* GCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCRequest.m; path = ../sdk/GCRequest.m; sourceTree = SOURCE_ROOT; };
+		23AF399A14103AA70045A2B4 /* Glitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Glitch.h; path = ../sdk/Glitch.h; sourceTree = SOURCE_ROOT; };
+		23AF399B14103AA70045A2B4 /* Glitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Glitch.m; path = ../sdk/Glitch.m; sourceTree = SOURCE_ROOT; };
+		23AF39E9141048EE0045A2B4 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "../sdk/JSON/NSObject+SBJson.h"; sourceTree = SOURCE_ROOT; };
+		23AF39EA141048EE0045A2B4 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJson.m"; path = "../sdk/JSON/NSObject+SBJson.m"; sourceTree = SOURCE_ROOT; };
+		23AF39EB141048EE0045A2B4 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = ../sdk/JSON/SBJson.h; sourceTree = SOURCE_ROOT; };
+		23AF39EC141048EE0045A2B4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = ../sdk/JSON/SBJsonParser.h; sourceTree = SOURCE_ROOT; };
+		23AF39ED141048EE0045A2B4 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = ../sdk/JSON/SBJsonParser.m; sourceTree = SOURCE_ROOT; };
+		23AF39EE141048EE0045A2B4 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = ../sdk/JSON/SBJsonStreamParser.h; sourceTree = SOURCE_ROOT; };
+		23AF39EF141048EE0045A2B4 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = ../sdk/JSON/SBJsonStreamParser.m; sourceTree = SOURCE_ROOT; };
+		23AF39F0141048EE0045A2B4 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAccumulator.h; path = ../sdk/JSON/SBJsonStreamParserAccumulator.h; sourceTree = SOURCE_ROOT; };
+		23AF39F1141048EE0045A2B4 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAccumulator.m; path = ../sdk/JSON/SBJsonStreamParserAccumulator.m; sourceTree = SOURCE_ROOT; };
+		23AF39F2141048EE0045A2B4 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = ../sdk/JSON/SBJsonStreamParserAdapter.h; sourceTree = SOURCE_ROOT; };
+		23AF39F3141048EE0045A2B4 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = ../sdk/JSON/SBJsonStreamParserAdapter.m; sourceTree = SOURCE_ROOT; };
+		23AF39F4141048EE0045A2B4 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = ../sdk/JSON/SBJsonStreamParserState.h; sourceTree = SOURCE_ROOT; };
+		23AF39F5141048EE0045A2B4 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = ../sdk/JSON/SBJsonStreamParserState.m; sourceTree = SOURCE_ROOT; };
+		23AF39F6141048EE0045A2B4 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = ../sdk/JSON/SBJsonStreamWriter.h; sourceTree = SOURCE_ROOT; };
+		23AF39F7141048EE0045A2B4 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = ../sdk/JSON/SBJsonStreamWriter.m; sourceTree = SOURCE_ROOT; };
+		23AF39F8141048EE0045A2B4 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterAccumulator.h; path = ../sdk/JSON/SBJsonStreamWriterAccumulator.h; sourceTree = SOURCE_ROOT; };
+		23AF39F9141048EE0045A2B4 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterAccumulator.m; path = ../sdk/JSON/SBJsonStreamWriterAccumulator.m; sourceTree = SOURCE_ROOT; };
+		23AF39FA141048EE0045A2B4 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = ../sdk/JSON/SBJsonStreamWriterState.h; sourceTree = SOURCE_ROOT; };
+		23AF39FB141048EE0045A2B4 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = ../sdk/JSON/SBJsonStreamWriterState.m; sourceTree = SOURCE_ROOT; };
+		23AF39FC141048EE0045A2B4 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = ../sdk/JSON/SBJsonTokeniser.h; sourceTree = SOURCE_ROOT; };
+		23AF39FD141048EE0045A2B4 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = ../sdk/JSON/SBJsonTokeniser.m; sourceTree = SOURCE_ROOT; };
+		23AF39FE141048EE0045A2B4 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonUTF8Stream.h; path = ../sdk/JSON/SBJsonUTF8Stream.h; sourceTree = SOURCE_ROOT; };
+		23AF39FF141048EE0045A2B4 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = ../sdk/JSON/SBJsonUTF8Stream.m; sourceTree = SOURCE_ROOT; };
+		23AF3A00141048EE0045A2B4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = ../sdk/JSON/SBJsonWriter.h; sourceTree = SOURCE_ROOT; };
+		23AF3A01141048EE0045A2B4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = ../sdk/JSON/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
+		23AF3A1B14104E350045A2B4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		237A8832140D60A8004D6BA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237A883A140D60A8004D6BA6 /* UIKit.framework in Frameworks */,
+				237A883C140D60A8004D6BA6 /* Foundation.framework in Frameworks */,
+				237A883E140D60A8004D6BA6 /* CoreGraphics.framework in Frameworks */,
+				0AEBA20C143BF611002B60CD /* libTestFlight.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1723C0143CC4A600C0C0DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA235143C6618002B60CD /* GLAchievement.h */,
+				0AEBA236143C6618002B60CD /* GLAchievement.m */,
+				0A1723D3143CF91400C0C0DF /* GLItem.h */,
+				0A1723D4143CF91500C0C0DF /* GLItem.m */,
+				0A1723BC143CC49200C0C0DF /* GLSkill.h */,
+				0A1723BD143CC49200C0C0DF /* GLSkill.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0A1723C1143CC4B800C0C0DF /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA20D143C2DAE002B60CD /* GlitchedClient.h */,
+				0AEBA20E143C2DAE002B60CD /* GlitchedClient.m */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		0A1723C2143CC4CC00C0C0DF /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA238143C68D2002B60CD /* GLAchievementCell.h */,
+				0AEBA239143C68D2002B60CD /* GLAchievementCell.m */,
+				0A1723D6143CFAEA00C0C0DF /* GLItemCell.h */,
+				0A1723D7143CFAEA00C0C0DF /* GLItemCell.m */,
+				0A1723C6143CCCC700C0C0DF /* SkillCell.h */,
+				0A1723C7143CCCC700C0C0DF /* SkillCell.m */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		0A1723D9143D867E00C0C0DF /* DDProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				0A1723DA143D867E00C0C0DF /* DDProgressView.h */,
+				0A1723DB143D867E00C0C0DF /* DDProgressView.m */,
+			);
+			path = DDProgressView;
+			sourceTree = "<group>";
+		};
+		0A7E4F7514438E1700C3E3E5 /* Customizations */ = {
+			isa = PBXGroup;
+			children = (
+				0A7E4F7614438E2B00C3E3E5 /* CustomUITabBarController.h */,
+				0A7E4F7714438E2B00C3E3E5 /* CustomUITabBarController.m */,
+				0A7E4F7814438E2B00C3E3E5 /* CustomTabBarItem.h */,
+				0A7E4F7914438E2B00C3E3E5 /* CustomTabBarItem.m */,
+			);
+			name = Customizations;
+			sourceTree = "<group>";
+		};
+		0AA3490E1456939D00728FA0 /* NotRootBeer */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3490F1456953200728FA0 /* UIImageView+NotRootBeer.h */,
+				0AA349101456953200728FA0 /* UIImageView+NotRootBeer.m */,
+			);
+			name = NotRootBeer;
+			sourceTree = "<group>";
+		};
+		0ABB8694143E516A0037B8C4 /* Custom Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A7E4F4714437DA300C3E3E5 /* AchievementViewController.h */,
+				0A7E4F4814437DA300C3E3E5 /* AchievementViewController.m */,
+				23AF3958141038CA0045A2B4 /* SampleViewController.h */,
+				23AF3959141038CA0045A2B4 /* SampleViewController.m */,
+				0A1723CD143CE57D00C0C0DF /* InfoViewController.h */,
+				0A1723CE143CE57E00C0C0DF /* InfoViewController.m */,
+				0AFC1C3A143B258A007727E5 /* AchievementsController.h */,
+				0AFC1C3B143B258A007727E5 /* AchievementsController.m */,
+				0A1723C3143CC50E00C0C0DF /* SkillsController.h */,
+				0A1723C4143CC50E00C0C0DF /* SkillsController.m */,
+				0A1723D0143CF76100C0C0DF /* InventoryViewController.h */,
+				0A1723D1143CF76200C0C0DF /* InventoryViewController.m */,
+				0AE586EB1441539100BCEDB0 /* SkillViewController.h */,
+				0AE586EC1441539100BCEDB0 /* SkillViewController.m */,
+			);
+			name = "Custom Controllers";
+			sourceTree = "<group>";
+		};
+		0AEBA1F3143BF611002B60CD /* Third-Party */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3490E1456939D00728FA0 /* NotRootBeer */,
+				0A1723D9143D867E00C0C0DF /* DDProgressView */,
+				237A8859140D60C8004D6BA6 /* Glitch iOS SDK */,
+				0AEBA23B143C6A52002B60CD /* SDWebImage */,
+				0AEBA21C143C5671002B60CD /* TableDesignRevisited */,
+				0AEBA1F4143BF611002B60CD /* EGOImageLoading */,
+				0AEBA203143BF611002B60CD /* QuickDialog */,
+				0AEBA204143BF611002B60CD /* TestFlightSDK */,
+			);
+			path = "Third-Party";
+			sourceTree = "<group>";
+		};
+		0AEBA1F4143BF611002B60CD /* EGOImageLoading */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA1F5143BF611002B60CD /* EGOCache */,
+				0AEBA1F8143BF611002B60CD /* EGOImageButton */,
+				0AEBA1FB143BF611002B60CD /* EGOImageLoader */,
+				0AEBA200143BF611002B60CD /* EGOImageView */,
+			);
+			path = EGOImageLoading;
+			sourceTree = "<group>";
+		};
+		0AEBA1F5143BF611002B60CD /* EGOCache */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA1F6143BF611002B60CD /* EGOCache.h */,
+				0AEBA1F7143BF611002B60CD /* EGOCache.m */,
+			);
+			path = EGOCache;
+			sourceTree = "<group>";
+		};
+		0AEBA1F8143BF611002B60CD /* EGOImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA1F9143BF611002B60CD /* EGOImageButton.h */,
+				0AEBA1FA143BF611002B60CD /* EGOImageButton.m */,
+			);
+			path = EGOImageButton;
+			sourceTree = "<group>";
+		};
+		0AEBA1FB143BF611002B60CD /* EGOImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA1FC143BF611002B60CD /* EGOImageLoadConnection.h */,
+				0AEBA1FD143BF611002B60CD /* EGOImageLoadConnection.m */,
+				0AEBA1FE143BF611002B60CD /* EGOImageLoader.h */,
+				0AEBA1FF143BF611002B60CD /* EGOImageLoader.m */,
+			);
+			path = EGOImageLoader;
+			sourceTree = "<group>";
+		};
+		0AEBA200143BF611002B60CD /* EGOImageView */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA201143BF611002B60CD /* EGOImageView.h */,
+				0AEBA202143BF611002B60CD /* EGOImageView.m */,
+			);
+			path = EGOImageView;
+			sourceTree = "<group>";
+		};
+		0AEBA203143BF611002B60CD /* QuickDialog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QuickDialog;
+			sourceTree = "<group>";
+		};
+		0AEBA204143BF611002B60CD /* TestFlightSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA205143BF611002B60CD /* libTestFlight.a */,
+				0AEBA206143BF611002B60CD /* TestFlight.h */,
+			);
+			path = TestFlightSDK;
+			sourceTree = "<group>";
+		};
+		0AEBA21C143C5671002B60CD /* TableDesignRevisited */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA21D143C5671002B60CD /* GradientBackgroundTable.h */,
+				0AEBA21E143C5671002B60CD /* GradientBackgroundTable.m */,
+				0AEBA21F143C5671002B60CD /* LabelCell.h */,
+				0AEBA220143C5671002B60CD /* LabelCell.m */,
+				0AEBA223143C5671002B60CD /* PageCell.h */,
+				0AEBA224143C5671002B60CD /* PageCell.m */,
+				0AEBA225143C5671002B60CD /* PageCellBackground.h */,
+				0AEBA226143C5671002B60CD /* PageCellBackground.m */,
+				0AEBA227143C5671002B60CD /* PageViewController.h */,
+				0AEBA228143C5671002B60CD /* PageViewController.m */,
+				0AEBA229143C5671002B60CD /* RoundRect.h */,
+				0AEBA22A143C5671002B60CD /* RoundRect.m */,
+				0AEBA22B143C5671002B60CD /* TextFieldCell.h */,
+				0AEBA22C143C5671002B60CD /* TextFieldCell.m */,
+			);
+			path = TableDesignRevisited;
+			sourceTree = "<group>";
+		};
+		0AEBA23B143C6A52002B60CD /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				0AEBA23C143C6A52002B60CD /* SDImageCache.h */,
+				0AEBA23D143C6A52002B60CD /* SDImageCache.m */,
+				0AEBA23E143C6A52002B60CD /* SDImageCacheDelegate.h */,
+				0AEBA23F143C6A52002B60CD /* SDWebImageCompat.h */,
+				0AEBA240143C6A52002B60CD /* SDWebImageDownloader.h */,
+				0AEBA241143C6A52002B60CD /* SDWebImageDownloader.m */,
+				0AEBA242143C6A52002B60CD /* SDWebImageDownloaderDelegate.h */,
+				0AEBA243143C6A52002B60CD /* SDWebImageManager.h */,
+				0AEBA244143C6A52002B60CD /* SDWebImageManager.m */,
+				0AEBA245143C6A52002B60CD /* SDWebImageManagerDelegate.h */,
+				0AEBA246143C6A52002B60CD /* UIImageView+WebCache.h */,
+				0AEBA247143C6A52002B60CD /* UIImageView+WebCache.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		237A882A140D60A8004D6BA6 = {
+			isa = PBXGroup;
+			children = (
+				0AEBA1F3143BF611002B60CD /* Third-Party */,
+				237A883F140D60A8004D6BA6 /* Glitched */,
+				237A8838140D60A8004D6BA6 /* Frameworks */,
+				237A8836140D60A8004D6BA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		237A8836140D60A8004D6BA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				237A8835140D60A8004D6BA6 /* Glitched.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		237A8838140D60A8004D6BA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				237A8839140D60A8004D6BA6 /* UIKit.framework */,
+				237A883B140D60A8004D6BA6 /* Foundation.framework */,
+				237A883D140D60A8004D6BA6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		237A883F140D60A8004D6BA6 /* Glitched */ = {
+			isa = PBXGroup;
+			children = (
+				0A7E4F7514438E1700C3E3E5 /* Customizations */,
+				0A1723C1143CC4B800C0C0DF /* Client */,
+				0A1723C0143CC4A600C0C0DF /* Models */,
+				0A1723C2143CC4CC00C0C0DF /* Custom Cells */,
+				0ABB8694143E516A0037B8C4 /* Custom Controllers */,
+				23AF3956141038CA0045A2B4 /* GlitchedAppDelegate.h */,
+				23AF3957141038CA0045A2B4 /* GlitchedAppDelegate.m */,
+				237A8840140D60A8004D6BA6 /* Supporting Files */,
+			);
+			name = Glitched;
+			path = SampleGame;
+			sourceTree = "<group>";
+		};
+		237A8840140D60A8004D6BA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23AF390C14100CED0045A2B4 /* Interface Builder */,
+				23AF390B14100CE20045A2B4 /* Images */,
+				23AF390A14100CDE0045A2B4 /* Fonts */,
+				237A8847140D60A8004D6BA6 /* Glitched-Prefix.pch */,
+				237A8841140D60A8004D6BA6 /* Glitched-Info.plist */,
+				23AF3A1B14104E350045A2B4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		237A8859140D60C8004D6BA6 /* Glitch iOS SDK */ = {
+			isa = PBXGroup;
+			children = (
+				23AF399814103AA70045A2B4 /* GCRequest.h */,
+				23AF399914103AA70045A2B4 /* GCRequest.m */,
+				23AF399A14103AA70045A2B4 /* Glitch.h */,
+				23AF399B14103AA70045A2B4 /* Glitch.m */,
+				2399647A14114CE500827492 /* GlitchConfig.h */,
+				23AF390D141036950045A2B4 /* JSON */,
+			);
+			name = "Glitch iOS SDK";
+			path = ../SampleGame;
+			sourceTree = "<group>";
+		};
+		23AF390A14100CDE0045A2B4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				23AF3947141038520045A2B4 /* OpenSans-Bold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		23AF390B14100CE20045A2B4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0AB7E68C14458ACB00019D94 /* icon_auctions.png */,
+				0AB7E68D14458ACB00019D94 /* icon_auctions@2x.png */,
+				0AB7E68E14458ACB00019D94 /* icon_inventory@2x.png */,
+				0AB7E68F14458ACB00019D94 /* icon_skills@2x.png */,
+				0A7E4F56144385B600C3E3E5 /* achievement_background.png */,
+				0A7E4F581443889B00C3E3E5 /* achievement_background@2x.png */,
+				0AEBA24C143C6D8E002B60CD /* default_achievement_60.png */,
+				23AF3949141038590045A2B4 /* groddle.png */,
+				23AF394A141038590045A2B4 /* groddle@2x.png */,
+				0A7E4F4F144383CE00C3E3E5 /* icon-512.png */,
+				0AEBA210143C54F9002B60CD /* icon-72.png */,
+				0AEBA211143C54F9002B60CD /* icon-small-50.png */,
+				0AEBA212143C54F9002B60CD /* icon-small.png */,
+				0AEBA213143C54F9002B60CD /* icon-small@2x.png */,
+				0AEBA214143C54F9002B60CD /* icon.png */,
+				0AEBA215143C54F9002B60CD /* icon@2x.png */,
+				0A7E4F4A144383CE00C3E3E5 /* icon_achievements.png */,
+				0AB7E689144585CE00019D94 /* icon_achievements@2x.png */,
+				0A7E4F4C144383CE00C3E3E5 /* icon_inventory.png */,
+				0A7E4F4D144383CE00C3E3E5 /* icon_skills.png */,
+				0A7E4F4E144383CE00C3E3E5 /* icon_status.png */,
+				0A1723CB143CDF5B00C0C0DF /* info_background.png */,
+				0A6FDA151442EF4F0097868F /* skill_background.png */,
+				0A7E4F7C14438E9E00C3E3E5 /* tabbar-bg.png */,
+				0A7E4F7D14438E9E00C3E3E5 /* tabbar-bg@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		23AF390C14100CED0045A2B4 /* Interface Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0A7E4F4414437CAD00C3E3E5 /* AchievementView.xib */,
+				23201C1A14105138003E71A7 /* MainWindow.xib */,
+				23201C1B14105138003E71A7 /* SampleViewController.xib */,
+				0A1723C9143CDCFE00C0C0DF /* InfoView.xib */,
+				0ABB8695143F606D0037B8C4 /* SkillCell.xib */,
+				0AE586E81441517300BCEDB0 /* SkillView.xib */,
+			);
+			name = "Interface Builder";
+			sourceTree = "<group>";
+		};
+		23AF390D141036950045A2B4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				23AF39E9141048EE0045A2B4 /* NSObject+SBJson.h */,
+				23AF39EA141048EE0045A2B4 /* NSObject+SBJson.m */,
+				23AF39EB141048EE0045A2B4 /* SBJson.h */,
+				23AF39EC141048EE0045A2B4 /* SBJsonParser.h */,
+				23AF39ED141048EE0045A2B4 /* SBJsonParser.m */,
+				23AF39EE141048EE0045A2B4 /* SBJsonStreamParser.h */,
+				23AF39EF141048EE0045A2B4 /* SBJsonStreamParser.m */,
+				23AF39F0141048EE0045A2B4 /* SBJsonStreamParserAccumulator.h */,
+				23AF39F1141048EE0045A2B4 /* SBJsonStreamParserAccumulator.m */,
+				23AF39F2141048EE0045A2B4 /* SBJsonStreamParserAdapter.h */,
+				23AF39F3141048EE0045A2B4 /* SBJsonStreamParserAdapter.m */,
+				23AF39F4141048EE0045A2B4 /* SBJsonStreamParserState.h */,
+				23AF39F5141048EE0045A2B4 /* SBJsonStreamParserState.m */,
+				23AF39F6141048EE0045A2B4 /* SBJsonStreamWriter.h */,
+				23AF39F7141048EE0045A2B4 /* SBJsonStreamWriter.m */,
+				23AF39F8141048EE0045A2B4 /* SBJsonStreamWriterAccumulator.h */,
+				23AF39F9141048EE0045A2B4 /* SBJsonStreamWriterAccumulator.m */,
+				23AF39FA141048EE0045A2B4 /* SBJsonStreamWriterState.h */,
+				23AF39FB141048EE0045A2B4 /* SBJsonStreamWriterState.m */,
+				23AF39FC141048EE0045A2B4 /* SBJsonTokeniser.h */,
+				23AF39FD141048EE0045A2B4 /* SBJsonTokeniser.m */,
+				23AF39FE141048EE0045A2B4 /* SBJsonUTF8Stream.h */,
+				23AF39FF141048EE0045A2B4 /* SBJsonUTF8Stream.m */,
+				23AF3A00141048EE0045A2B4 /* SBJsonWriter.h */,
+				23AF3A01141048EE0045A2B4 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		237A8834140D60A8004D6BA6 /* Glitched */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237A8856140D60A8004D6BA6 /* Build configuration list for PBXNativeTarget "Glitched" */;
+			buildPhases = (
+				23AF3955141038BF0045A2B4 /* Sources */,
+				237A8832140D60A8004D6BA6 /* Frameworks */,
+				237A8833140D60A8004D6BA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glitched;
+			productName = SampleGame;
+			productReference = 237A8835140D60A8004D6BA6 /* Glitched.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		237A882C140D60A8004D6BA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = WeLike;
+			};
+			buildConfigurationList = 237A882F140D60A8004D6BA6 /* Build configuration list for PBXProject "Glitched" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 237A882A140D60A8004D6BA6;
+			productRefGroup = 237A8836140D60A8004D6BA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				237A8834140D60A8004D6BA6 /* Glitched */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		237A8833140D60A8004D6BA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23AF3948141038520045A2B4 /* OpenSans-Bold.ttf in Resources */,
+				23AF394B141038590045A2B4 /* groddle.png in Resources */,
+				23AF394C141038590045A2B4 /* groddle@2x.png in Resources */,
+				23201C1C14105138003E71A7 /* MainWindow.xib in Resources */,
+				23201C1D14105138003E71A7 /* SampleViewController.xib in Resources */,
+				0AEBA216143C54F9002B60CD /* icon-72.png in Resources */,
+				0AEBA217143C54F9002B60CD /* icon-small-50.png in Resources */,
+				0AEBA218143C54F9002B60CD /* icon-small.png in Resources */,
+				0AEBA219143C54F9002B60CD /* icon-small@2x.png in Resources */,
+				0AEBA21A143C54F9002B60CD /* icon.png in Resources */,
+				0AEBA21B143C54F9002B60CD /* icon@2x.png in Resources */,
+				0AEBA24D143C6D8E002B60CD /* default_achievement_60.png in Resources */,
+				0A1723CA143CDCFF00C0C0DF /* InfoView.xib in Resources */,
+				0A1723CC143CDF5B00C0C0DF /* info_background.png in Resources */,
+				0ABB8696143F606D0037B8C4 /* SkillCell.xib in Resources */,
+				0AE586E91441517300BCEDB0 /* SkillView.xib in Resources */,
+				0A6FDA161442EF4F0097868F /* skill_background.png in Resources */,
+				0A7E4F4514437CAD00C3E3E5 /* AchievementView.xib in Resources */,
+				0A7E4F50144383CE00C3E3E5 /* icon_achievements.png in Resources */,
+				0A7E4F52144383CE00C3E3E5 /* icon_inventory.png in Resources */,
+				0A7E4F53144383CE00C3E3E5 /* icon_skills.png in Resources */,
+				0A7E4F54144383CE00C3E3E5 /* icon_status.png in Resources */,
+				0A7E4F55144383CE00C3E3E5 /* icon-512.png in Resources */,
+				0A7E4F57144385B600C3E3E5 /* achievement_background.png in Resources */,
+				0A7E4F591443889B00C3E3E5 /* achievement_background@2x.png in Resources */,
+				0A7E4F7E14438E9E00C3E3E5 /* tabbar-bg.png in Resources */,
+				0A7E4F7F14438E9E00C3E3E5 /* tabbar-bg@2x.png in Resources */,
+				0AB7E68A144585CE00019D94 /* icon_achievements@2x.png in Resources */,
+				0AB7E69014458ACB00019D94 /* icon_auctions.png in Resources */,
+				0AB7E69114458ACB00019D94 /* icon_auctions@2x.png in Resources */,
+				0AB7E69214458ACB00019D94 /* icon_inventory@2x.png in Resources */,
+				0AB7E69314458ACB00019D94 /* icon_skills@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23AF3955141038BF0045A2B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23AF395A141038CA0045A2B4 /* GlitchedAppDelegate.m in Sources */,
+				23AF395B141038CA0045A2B4 /* SampleViewController.m in Sources */,
+				23AF399C14103AA70045A2B4 /* GCRequest.m in Sources */,
+				23AF399D14103AA70045A2B4 /* Glitch.m in Sources */,
+				23AF3A02141048EE0045A2B4 /* NSObject+SBJson.m in Sources */,
+				23AF3A03141048EE0045A2B4 /* SBJsonParser.m in Sources */,
+				23AF3A04141048EE0045A2B4 /* SBJsonStreamParser.m in Sources */,
+				23AF3A05141048EE0045A2B4 /* SBJsonStreamParserAccumulator.m in Sources */,
+				23AF3A06141048EE0045A2B4 /* SBJsonStreamParserAdapter.m in Sources */,
+				23AF3A07141048EE0045A2B4 /* SBJsonStreamParserState.m in Sources */,
+				23AF3A08141048EE0045A2B4 /* SBJsonStreamWriter.m in Sources */,
+				23AF3A09141048EE0045A2B4 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				23AF3A0A141048EE0045A2B4 /* SBJsonStreamWriterState.m in Sources */,
+				23AF3A0B141048EE0045A2B4 /* SBJsonTokeniser.m in Sources */,
+				23AF3A0C141048EE0045A2B4 /* SBJsonUTF8Stream.m in Sources */,
+				23AF3A0D141048EE0045A2B4 /* SBJsonWriter.m in Sources */,
+				23AF3A1C14104E350045A2B4 /* main.m in Sources */,
+				0AFC1C3C143B258A007727E5 /* AchievementsController.m in Sources */,
+				0AEBA207143BF611002B60CD /* EGOCache.m in Sources */,
+				0AEBA208143BF611002B60CD /* EGOImageButton.m in Sources */,
+				0AEBA209143BF611002B60CD /* EGOImageLoadConnection.m in Sources */,
+				0AEBA20A143BF611002B60CD /* EGOImageLoader.m in Sources */,
+				0AEBA20B143BF611002B60CD /* EGOImageView.m in Sources */,
+				0AEBA20F143C2DAE002B60CD /* GlitchedClient.m in Sources */,
+				0AEBA22D143C5671002B60CD /* GradientBackgroundTable.m in Sources */,
+				0AEBA22E143C5671002B60CD /* LabelCell.m in Sources */,
+				0AEBA230143C5671002B60CD /* PageCell.m in Sources */,
+				0AEBA231143C5671002B60CD /* PageCellBackground.m in Sources */,
+				0AEBA232143C5671002B60CD /* PageViewController.m in Sources */,
+				0AEBA233143C5671002B60CD /* RoundRect.m in Sources */,
+				0AEBA234143C5671002B60CD /* TextFieldCell.m in Sources */,
+				0AEBA237143C6618002B60CD /* GLAchievement.m in Sources */,
+				0AEBA23A143C68D3002B60CD /* GLAchievementCell.m in Sources */,
+				0AEBA248143C6A52002B60CD /* SDImageCache.m in Sources */,
+				0AEBA249143C6A52002B60CD /* SDWebImageDownloader.m in Sources */,
+				0AEBA24A143C6A52002B60CD /* SDWebImageManager.m in Sources */,
+				0AEBA24B143C6A52002B60CD /* UIImageView+WebCache.m in Sources */,
+				0A1723BE143CC49200C0C0DF /* GLSkill.m in Sources */,
+				0A1723C5143CC50E00C0C0DF /* SkillsController.m in Sources */,
+				0A1723C8143CCCC700C0C0DF /* SkillCell.m in Sources */,
+				0A1723CF143CE57E00C0C0DF /* InfoViewController.m in Sources */,
+				0A1723D2143CF76300C0C0DF /* InventoryViewController.m in Sources */,
+				0A1723D5143CF91500C0C0DF /* GLItem.m in Sources */,
+				0A1723D8143CFAEA00C0C0DF /* GLItemCell.m in Sources */,
+				0A1723DC143D867E00C0C0DF /* DDProgressView.m in Sources */,
+				0AE586ED1441539100BCEDB0 /* SkillViewController.m in Sources */,
+				0A7E4F4914437DA300C3E3E5 /* AchievementViewController.m in Sources */,
+				0A7E4F7A14438E2B00C3E3E5 /* CustomUITabBarController.m in Sources */,
+				0A7E4F7B14438E2B00C3E3E5 /* CustomTabBarItem.m in Sources */,
+				0AA349111456953200728FA0 /* UIImageView+NotRootBeer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		237A8854140D60A8004D6BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		237A8855140D60A8004D6BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WeLike, LLC";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75CD6277-8502-4637-9C4B-DD4B0BA9D7BD";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		237A8857140D60A8004D6BA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glitched-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Glitched-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK\"",
+					"\"$(SRCROOT)/Third-Party/TestFlightSDK\"",
+				);
+				PRODUCT_NAME = Glitched;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		237A8858140D60A8004D6BA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glitched-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Glitched-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TestFlightSDK\"",
+					"\"$(SRCROOT)/Third-Party/TestFlightSDK\"",
+				);
+				PRODUCT_NAME = Glitched;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		237A882F140D60A8004D6BA6 /* Build configuration list for PBXProject "Glitched" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237A8854140D60A8004D6BA6 /* Debug */,
+				237A8855140D60A8004D6BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		237A8856140D60A8004D6BA6 /* Build configuration list for PBXNativeTarget "Glitched" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237A8857140D60A8004D6BA6 /* Debug */,
+				237A8858140D60A8004D6BA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 237A882C140D60A8004D6BA6 /* Project object */;
+}

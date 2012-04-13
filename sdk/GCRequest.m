@@ -130,6 +130,7 @@ static NSTimeInterval const GCTimeout = 120;
                               [GCRequest urlEncodeString:key],
                               [GCRequest urlEncodeString:[[params objectForKey:key] description]]]];
     }
+    NSLog(@"params = %@", [arguments componentsJoinedByString:@"&"]);
     
     return [arguments componentsJoinedByString:@"&"];
 }

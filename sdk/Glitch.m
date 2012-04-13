@@ -103,8 +103,7 @@ NSString * AccessTokenSavePath() {
     {
         [params setValue:state forKey:@"state"];
     }
-    
-    
+        
     NSString * authUrl = [GCRequest serializeURL:kGCAuthUrl params:params];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:authUrl]];
 }
